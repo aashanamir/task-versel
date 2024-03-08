@@ -1,0 +1,111 @@
+:root {
+  --green-color : #0AA36E;
+}
+
+*{
+  margin : 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-screen{
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green-color);
+}
+
+.login-screen form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.c-to-o{
+
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 52px;
+}
+
+.login-screen form .input{
+  display: flex;
+  flex-direction: column;
+}
+.login-screen form .input label{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.login-screen form .input input{
+  width: 380px;
+  height: 48px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 8px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+
+.login-screen form .input input:hover{
+  border-bottom: 2px solid var(--green-color);
+  box-shadow: inset 0px  0px  5px var(--green-color);
+  outline: none;
+}
+
+.login-screen form button{
+  width: 380px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: var(--green-color);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  
+
+}
+
+.login-screen form button:hover{
+  background-color: #fff;
+  color: var(--green-color);
+  border: 2px solid var(--green-color);
+  cursor: pointer;
+  transition: 0.10s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+/* Media Query for smaller devices */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .login-screen form .input label {
+    margin-left: 12px;
+}
+  .login-screen form .input input {
+    width: 320px;
+    height: 48px;
+    margin-left: 20px;
+}
+.login-screen form button {
+  width: 320px;
+  height: 48px;
+  margin-left: 20px;
+}
+}
